@@ -178,7 +178,8 @@ Compress Claude's output to save tokens. Auto-activates on session start.
 
 | Command | Description |
 |---------|-------------|
-| `/knowledge-base ingest` | Add raw material to AI/LLM knowledge base |
+| `/knowledge-base ingest` | Add raw material to AI/LLM knowledge base (web / PDF / image / text) |
+| `/knowledge-base ingest <youtube-url>` | Extract YouTube transcript → summarize → save to `raw/youtube/` (no API key needed; requires `pip3 install youtube-transcript-api`) |
 | `/knowledge-base compile` | Compile raw docs into wiki articles |
 | `/knowledge-base query` | Ask questions to knowledge base |
 | `/knowledge-base lint` | Health check knowledge base |
@@ -200,3 +201,6 @@ Compress Claude's output to save tokens. Auto-activates on session start.
 ---
 
 *Last updated: 2026-05-06 · [cc.storyfox.cz](https://cc.storyfox.cz/) for built-in commands reference*
+
+<!-- update log -->
+<!-- 2026-05-06: add knowledge-base YouTube ingest command -->
